@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var n = prompt("Введите число")
+        for (var i = 1; i <= n; i++) {
+            f = 1
+            for (var j = 2; j < i; j++) {
+                if (i % j == 0) {f=0}
+            }
+            if (f == 1) {
+                alert(i)
+            }
+        }
+    </script>
+</body>
+</html>
