@@ -1,0 +1,17 @@
+<html>
+<script>
+	let len = prompt("Введите значение");
+	let numbers = Array.from({length: len}, () => Math.round(Math.random() * 40)-10);
+	alert("Массив: "+numbers);
+	let positives = numbers.filter( n => n > 0);
+	let avg_positive = positives.reduce((a, b) => a+b)/positives.length;
+	alert("Среднее арифметическое положительных: "+avg_positive);
+	let positive_array = numbers.map(n => n<0 ? n**2 : n);
+	alert("Массив с квадратами вместо отрицательных чисел: "+positive_array);
+	let negatives = numbers.filter( n => n < 0);
+	let avg_negative = negatives.reduce((a, b) => a+b)/negatives.length;
+	alert("Среднее арифметическое отрицательных чисел: "+avg_negative);
+	let zeroes = numbers.filter( n => n == 0);
+	alert("Количество нулей в массиве: "+zeroes.length);
+</script>
+</html>

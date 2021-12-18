@@ -1,0 +1,60 @@
+<html>
+<script>
+let users = {
+	number: 10,
+	location: "Moscow",
+	age: "18-45"
+};
+let restraunts = {
+	names: ["Изумруд", "Сапфир", "Алмаз"],
+	profit: [10,20,40],
+	location: ["Moscow", "St-Petersburg"]
+};
+let orders = {
+	ids: [1,2,3,4,5],
+	product: ["Bread", "Water", "Milk"]
+};
+let n1 = Math.round(Math.random() * 2);
+let n2 = Math.round(Math.random() * 2);
+//alert(n1+n2);
+switch(n1){
+	case 0:
+		switch (n2){
+			case 0:
+				alert(users.number);
+				break;
+			case 1:
+				alert(users.location);
+				break;
+			case 2:
+				alert(users.age);
+				break;
+		}
+	break;
+	case 1:
+		switch (n2){
+			case 0:
+				alert(restraunts.names);
+				break;
+			case 1:
+				alert(restraunts.profit);
+				break;
+			case 2:
+				alert(restraunts.location);
+				break;
+		}
+	break;
+	case 2:
+		switch (n2){
+			case 0:
+				alert(orders.ids);
+				break;
+			case 1:
+			case 2:
+				alert(orders.product);
+				break;
+		}
+	break;
+}
+</script>
+</html>

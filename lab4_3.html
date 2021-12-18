@@ -1,0 +1,17 @@
+<html>
+<script>
+function Student(name, surname, age) {
+  this.name = name;
+  this.surname = surname;
+  this.age = age;
+  this.output = function() {
+  alert(this.name+" "+this.surname+" "+this.age);
+  };
+}
+let students = [new Student("Иванов", "Иван", 20), new Student("Петров", "Петр", 21), new Student("Сидоров", "Сидор", 19)];
+for (i=0; i<=2; i++){
+	students[i].output()
+}
+
+</script>
+</html>

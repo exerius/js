@@ -1,0 +1,41 @@
+<html>
+<script>
+function Calculator(n1,a,n2){
+	this.number1 = n1;
+	this.number2 = n2;
+	this.action = "+";
+	this.add = function(){
+		return (this.number1 + this.number2);
+	}
+	this.subtract = function(){
+		return (this.number1 - this.number2);
+	}
+	this.multiply = function(){
+		return (this.number1 * this.number2);
+	}
+	this.divide = function(){
+		return (this.number1 / this.number2);
+	}
+	this.act = function(){
+		switch(a){
+			case "+":
+				res = this.add()
+				break;
+			case "-":
+				res = this.subtract()
+				break;
+			case "*":
+				res = this.multiply()
+				break;
+			case "/":
+				res = this.divide()
+				break;
+		}
+		return(res);
+		alert(res);
+	}}
+	let result = new Calculator(144, "*", 144);
+	result = result.act();
+	alert(result);
+</script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<script>
+let n;
+let numbers = Array.from({length: 1000000}, () => Math.round(Math.random() * 2));
+let number = 0;
+let max_number =0 ;
+let color = prompt("Введите цвет");
+switch(color){
+	case "Красный":
+		n = 0;
+	case "Белый":
+		n = 2;
+	case "Чёрный":
+		n = 1;
+}
+for(i=0; i<=1000000; i++){
+	if( numbers[i] == 2){
+		number += n;
+	}
+	else{
+		number = 0;
+	}
+	if (number > max_number){
+		max_number = number;
+	}
+}
+alert(max_number);
+</script>
+</html>
